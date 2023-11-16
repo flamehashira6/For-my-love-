@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+	font-family: 'Norican', cursive;
+	background: #090d00;
+	text-align: center;
+    margin: 0;
+}
+
+img{
+  
+  height: 250px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
+
+#text {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-top: 0px;
+}
+
+  </style>
+
+
+
+
+<body>
+
+
+    
+
+    <section class="img">
+       <img src="love1.png" alt="">
+<!---
+<video id="myVideo" width="62%" height="48%" controls loop  autoplay>
+  <source src="img/love.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+ 
+</video>-->
+
+
+
+
+
+
+      </section>
+
+
+      <div class="container">
+        <p id="text"></p>
+       
+      </div>
+
+    
+
+      <script>
+        
+const text = document.querySelector('#text');
+const btn = document.querySelector('#btn');
+
+const str =  '"thanks for filling my day with joy i lovee uu too annie🫶💓"';
+let i = 0;
+
+function autoType() {
+  if (i < str.length) {
+    text.innerHTML += str.charAt(i);
+    i++;
+    setTimeout(autoType, 100);
+  } else {
+    btn.style.display = 'block';
+  }
+}
+
+autoType(); 
+
+function myFunction(){
+  var x = document.getElementById("myVideo").autoplay; }
+
+
+      </script>
+
+      
+    
+</body>
+</html>
